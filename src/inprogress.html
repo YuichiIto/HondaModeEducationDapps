@@ -1,31 +1,113 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-    </head>
-    <body>
-      <header>
-      				<ul>
-      					<li><a href='./index.html'>TOP</a></li>
-                <!--<li><button onclick="location.href='./index.html'">総合メニューへ</button></li>-->
-      					<li><a href="">募集検索</a></li>
-      					<li><a href="#sec02">申し込み</a></li>
-      					<li><a href="#sec03">進行一覧</a></li>
-      					<li><a href="#sec04">過去一覧</a></li>
-      				</ul>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="最新技術と自然との調和を目指す">
+<meta name="viewport" content="width=device-width">
+<title>Honda Mode</title>
+<link rel="stylesheet" media="all" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</head>
 
-      <h1>進行中一覧</h1>
-        <form action="">
-          <div id="dis2">
-          <h2>進行中その1</h2>
+<body id="top">
+</header>
+
+<div id="mainImg">
+	<img src="images/honda.jpg" alt="">
+</div>
+
+<!-- MESSAGE -->
+<section id="sec01">
+	<header>
+		<h2><span>On Lesson List</span></h2>
+	</header>
+		<!-- PETS LOAD HERE -->
+	<div class="inner">
+    <h1>進行中一覧</h1>
+      <form action="">
+        <div id="disp">
+        <h1>進行中その1</h1>
+        <table>
+          <tr>
+              <td>
+                <p>教育者名：</p>
+              </td>
+              <td>
+                <p>HoshidaAhori</p>
+              </td>
+          </tr>
+          <tr>
+              <td>
+                <p>レッスン名：</p>
+              </td>
+              <td>
+                <p>Resring</p>
+              </td>
+          </tr>
+          <tr>
+            <td>
+              <p>概要：</p>
+            </td>
+            <td>
+              <p>霊長類最強を相手に特訓</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>デポジット：</p>
+            </td>
+            <td>
+              <p>150000</p>
+            </td>
+          </tr>
+          <tr>
+              <td>
+                <p>評価の基準：</p>
+              </td>
+              <td>
+                <p>霊長類最強を前にどの程度健闘できるか</p>
+              </td>
+          </tr>
+          <tr>
+            <td>
+              <p>目標：</p>
+            </td>
+            <td>
+              <p>妥当霊長類最強です</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>期間：</p>
+            </td>
+            <td>
+              <p>2019-06-06~2019-07-06</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <!--
+              <p><button type="button">入力確定</button></p>
+              -->
+              <!--
+                <input type="button" value="申し込み" onclick="hyoji2(1)">-->
+              <input type="button" onclick="location.href='./upload.html'" value="動画掲載へ">
+            </td>
+          </table>
+        </div>
+
+          <div id="disp">
+          <h1>進行中その2</h1>
           <table>
             <tr>
                 <td>
                   <p>教育者名：</p>
                 </td>
                 <td>
-                  <p>HoshidaAhori</p>
+                  <p>MiwaKoushi</p>
                 </td>
             </tr>
             <tr>
@@ -33,7 +115,7 @@
                   <p>レッスン名：</p>
                 </td>
                 <td>
-                  <p>Resring</p>
+                  <p>Pinpon</p>
                 </td>
             </tr>
             <tr>
@@ -41,7 +123,7 @@
                 <p>概要：</p>
               </td>
               <td>
-                <p>霊長類最強を相手に特訓</p>
+                <p>壁打ち</p>
               </td>
             </tr>
 
@@ -50,7 +132,7 @@
                 <p>デポジット：</p>
               </td>
               <td>
-                <p>150000</p>
+                <p>30000</p>
               </td>
             </tr>
             <tr>
@@ -58,7 +140,7 @@
                   <p>評価の基準：</p>
                 </td>
                 <td>
-                  <p>霊長類最強を前にどの程度健闘できるか</p>
+                  <p>いかにミスなく打つか</p>
                 </td>
             </tr>
             <tr>
@@ -66,7 +148,7 @@
                 <p>目標：</p>
               </td>
               <td>
-                <p>妥当霊長類最強です</p>
+                <p>高速ドライブの習得</p>
               </td>
             </tr>
 
@@ -75,7 +157,7 @@
                 <p>期間：</p>
               </td>
               <td>
-                <p>2019-06-06~2019-07-06</p>
+                <p>2019-08-06~2019-10-06</p>
               </td>
             </tr>
             <tr>
@@ -84,129 +166,70 @@
                 <p><button type="button">入力確定</button></p>
                 -->
                 <!--
-                  <input type="button" value="申し込み" onclick="hyoji2(1)">-->
+                  <input type="button" value="申し込み" onclick="hyoji1(1)">
+                -->
                 <input type="button" onclick="location.href='./upload.html'" value="動画掲載へ">
               </td>
             </table>
           </div>
+          <!--
+              <button onclick="location.href='./index.html'">総合メニューへ</button>
+          -->
 
-            <div id="disp">
-            <h2>進行中その2</h2>
-            <table>
-              <tr>
-                  <td>
-                    <p>教育者名：</p>
-                  </td>
-                  <td>
-                    <p>MiwaKoushi</p>
-                  </td>
-              </tr>
-              <tr>
-                  <td>
-                    <p>レッスン名：</p>
-                  </td>
-                  <td>
-                    <p>Pinpon</p>
-                  </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>概要：</p>
-                </td>
-                <td>
-                  <p>壁打ち</p>
-                </td>
-              </tr>
 
-              <tr>
-                <td>
-                  <p>デポジット：</p>
-                </td>
-                <td>
-                  <p>30000</p>
-                </td>
-              </tr>
-              <tr>
-                  <td>
-                    <p>評価の基準：</p>
-                  </td>
-                  <td>
-                    <p>いかにミスなく打つか</p>
-                  </td>
-              </tr>
-              <tr>
-                <td>
-                  <p>目標：</p>
-                </td>
-                <td>
-                  <p>高速ドライブの習得</p>
-                </td>
-              </tr>
+      </form>
+      <script type="text/javascript" src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+      <!--
+      <script>
 
-              <tr>
-                <td>
-                  <p>期間：</p>
-                </td>
-                <td>
-                  <p>2019-08-06~2019-10-06</p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <!--
-                  <p><button type="button">入力確定</button></p>
-                  -->
-                  <!--
-                    <input type="button" value="申し込み" onclick="hyoji1(1)">
-                  -->
-                  <input type="button" onclick="location.href='./upload.html'" value="動画掲載へ">
-                </td>
-              </table>
-            </div>
-            <!--
-                <button onclick="location.href='./index.html'">総合メニューへ</button>
-            -->
-                <input type="button" onclick="location.href='./index.html'" value="総合メニューへ">
-
-        </form>
-        <script type="text/javascript" src="//code.jquery.com/jquery-3.4.1.min.js"></script>
-        <!--
-        <script>
-
-            $(function () {
-                $("button[type=button]").on('click', function () {
-                    var form = $("form");
-                    var arr = form.serializeArray();
-                    console.log(arr);
-                });
-            });
-        </script>
-        -->
-        <script>
-          function hyoji1(num)
+          $(function () {
+              $("button[type=button]").on('click', function () {
+                  var form = $("form");
+                  var arr = form.serializeArray();
+                  console.log(arr);
+              });
+          });
+      </script>
+      -->
+      <script>
+        function hyoji1(num)
+        {
+          if (num == 0)
           {
-            if (num == 0)
-            {
-              document.getElementById("disp").style.display="block";
-            }
-            else
-            {
-              document.getElementById("disp").style.display="none";
-            }
+            document.getElementById("disp").style.display="block";
           }
-        </script>
-        <!--
-          function hyoji2(num2)
+          else
           {
-            if (num2 == 0)
-            {
-              document.getElementById("disp2").style.display="block";
-            }
-            else
-            {
-              document.getElementById("disp2").style.display="none";
-            }
+            document.getElementById("disp").style.display="none";
           }
-        -->
-    </body>
+        }
+      </script>
+      <!--
+        function hyoji2(num2)
+        {
+          if (num2 == 0)
+          {
+            document.getElementById("disp2").style.display="block";
+          }
+          else
+          {
+            document.getElementById("disp2").style.display="none";
+          }
+        }
+      -->
+      <li><a href="./index.html">TOPへ</a></li>
+	</div>
+</section>
+<!-- // MESSAGE -->
+
+
+<footer id="footer">
+	Copyright(c) 2016 Sample Inc. All Rights Reserved. Design by <a href="http://f-tpl.com" target="_blank">http://f-tpl.com</a><!-- ←クレジット表記を外す場合はシリアルキーが必要です http://f-tpl.com/credit/ -->
+</footer>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/web3.min.js"></script>
+<script src="js/truffle-contract.js"></script>
+<script src="js/app.js"></script>
+</body>
 </html>
