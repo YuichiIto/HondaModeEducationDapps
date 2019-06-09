@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+      <header>
+      				<ul>
+      					<li><a href='./index.html'>TOP</a></li>
+                <!--<li><button onclick="location.href='./index.html'">総合メニューへ</button></li>-->
+      					<li><a href="">募集検索</a></li>
+      					<li><a href="#sec02">申し込み</a></li>
+      					<li><a href="#sec03">進行一覧</a></li>
+      					<li><a href="#sec04">過去一覧</a></li>
+      				</ul>
+      <h1>応募受付一覧</h1>
+        <form action="">
+          <h2>応募その1</h2>
+          <table>
+            <tr>
+                <td>
+                  <p>応募者名：</p>
+                </td>
+                <td>
+                  <p>taroSato</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <p>レッスン名：</p>
+                </td>
+                <td>
+                  <p>soccer</p>
+                </td>
+            </tr>
+            <tr>
+              <td>
+                <p>概要：</p>
+              </td>
+              <td>
+                <p>リフティングを究める</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <p>デポジット：</p>
+              </td>
+              <td>
+                <p>5,000</p>
+              </td>
+            </tr>
+            <tr>
+                <td>
+                  <p>評価の基準：</p>
+                </td>
+                <td>
+                  <p>リフティングの回数</p>
+                </td>
+            </tr>
+            <tr>
+              <td>
+                <p>目標：</p>
+              </td>
+              <td>
+                <p>リフティング５００回</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <p>期間：</p>
+              </td>
+              <td>
+                <p>2019-07-04~2019-07-30</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <!--
+                <p><button type="button">入力確定</button></p>
+                -->
+                <button onclick="location.href='./index.html'">受託</button>
+              </td>
+              <td>
+                <button onclick="location.href='./index.html'">拒否</button>
+              </td>
+            </table>
+
+          <div id="disp">
+            <h2>応募その2</h2>
+            <table>
+              <tr>
+                  <td>
+                    <p>応募者名：</p>
+                  </td>
+                  <td>
+                    <p>inoueZiro</p>
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                    <p>レッスン名：</p>
+                  </td>
+                  <td>
+                    <p>ベンチプレス</p>
+                  </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>概要：</p>
+                </td>
+                <td>
+                  <p>ウェイトトレーニング</p>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p>デポジット：</p>
+                </td>
+                <td>
+                  <p>20,000</p>
+                </td>
+              </tr>
+              <tr>
+                  <td>
+                    <p>評価の基準：</p>
+                  </td>
+                  <td>
+                    <p>挙上重量</p>
+                  </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>目標：</p>
+                </td>
+                <td>
+                  <p>ベンチプレス100kg</p>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p>期間：</p>
+                </td>
+                <td>
+                  <p>2019-08-06~2019-10-06</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <!--
+                  <p><button type="button">入力確定</button></p>
+                  -->
+                  <button onclick="location.href='./index.html'">受託</button>
+                  <!--<input type="button" value="受託" onclick="hyoji1(1)">-->
+                </td>
+                <td>
+                  <input type="button" value="拒否" onclick="hyoji1(1)">
+                </td>
+              </table>
+            </div>
+              <!--
+                <button onclick="location.href='./index.html'">総合メニューへ</button>
+              -->
+              <input type="button" onclick="location.href='./index.html'" value="総合メニューへ>
+
+
+        </form>
+        <script type="text/javascript" src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script>
+          function hyoji1(num)
+          {
+            if (num == 0)
+            {
+              document.getElementById("disp").style.display="block";
+            }
+            else
+            {
+              document.getElementById("disp").style.display="none";
+            }
+          }
+        </script>
+    </body>
+</html>

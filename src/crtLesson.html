@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+      <header>
+      				<ul>
+      					<li><a href='./index.html'>TOP</a></li>
+                <!--<li><button onclick="location.href='./index.html'">総合メニューへ</button></li>-->
+      					<li><a href="">募集検索</a></li>
+      					<li><a href="#sec02">申し込み</a></li>
+      					<li><a href="#sec03">進行一覧</a></li>
+      					<li><a href="#sec04">過去一覧</a></li>
+      				</ul>
+      <h1>イベント作成</h1>
+        <form action="">
+          <table>
+            <tr>
+                <td>
+                  <p>教育者名：</p>
+                </td>
+                <td>
+                  <p><input type="text" name="ipt00" value="" /></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <p>レッスン名：</p>
+                </td>
+                <td>
+                  <p><input type="text" name="ipt01" value="" /></p>
+                </td>
+            </tr>
+            <tr>
+              <td>
+                <p>概要：</p>
+              </td>
+              <td>
+                <p><input type="text" name="ipt02" value="" /></p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <p>デポジット：</p>
+              </td>
+              <td>
+                <p><input type="text" name="ipt03" value="" /></p>
+              </td>
+            </tr>
+            <tr>
+                <td>
+                  <p>評価の基準：</p>
+                </td>
+                <td>
+                  <p><input type="text" name="ipt04" value="" /></p>
+                </td>
+            </tr>
+            <tr>
+              <td>
+                <p>目標：</p>
+              </td>
+              <td>
+                <p><input type="text" name="ipt05" value="" /></p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <p>期間：</p>
+              </td>
+              <td>
+                <p><input type="text" name="ipt06" value="" /></p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <!--
+                <p><button type="button">入力確定</button></p>
+                -->
+                <input type="button" onclick="location.href='./index.html'" value="入力確定"">
+              </td>
+              <td>
+                <!--
+                <p><button type="button">総合メニューへ</button></p>
+                -->
+                <!--
+                  <button onclick="location.href='./index.html'">総合メニューへ</button>
+                -->
+                <a href='./index.html'>総合メニューへ</a>
+              </td>
+            </table>
+        </form>
+        <script type="text/javascript" src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script>
+            $(function () {
+                $("button[type=button]").on('click', function () {
+                    var form = $("form");
+                    var arr = form.serializeArray();
+                    console.log(arr);
+                });
+            });
+        </script>
+    </body>
+</html>

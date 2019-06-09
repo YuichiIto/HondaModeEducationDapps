@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+      <header>
+      				<ul>
+      					<li><a href='./index.html'>TOP</a></li>
+                <!--<li><button onclick="location.href='./index.html'">総合メニューへ</button></li>-->
+      					<li><a href="">募集検索</a></li>
+      					<li><a href="#sec02">申し込み</a></li>
+      					<li><a href="#sec03">進行一覧</a></li>
+      					<li><a href="#sec04">過去一覧</a></li>
+      				</ul>
+
+      <h1>募集一覧</h1>
+        <form action="">
+          <div id="dis2">
+          <h2>募集その1</h2>
+          <table>
+            <tr>
+                <td>
+                  <p>教育者名：</p>
+                </td>
+                <td>
+                  <p>hontaEisuke</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  <p>レッスン名：</p>
+                </td>
+                <td>
+                  <p>Baseball</p>
+                </td>
+            </tr>
+            <tr>
+              <td>
+                <p>概要：</p>
+              </td>
+              <td>
+                <p>毎週日曜日のマンツーマントレーニング</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <p>デポジット：</p>
+              </td>
+              <td>
+                <p>10,000</p>
+              </td>
+            </tr>
+            <tr>
+                <td>
+                  <p>評価の基準：</p>
+                </td>
+                <td>
+                  <p>３打席勝負の結果で判断</p>
+                </td>
+            </tr>
+            <tr>
+              <td>
+                <p>目標：</p>
+              </td>
+              <td>
+                <p>１本ヒット</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <p>期間：</p>
+              </td>
+              <td>
+                <p>2019-06-06~2019-07-06</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <!--
+                <p><button type="button">入力確定</button></p>
+                -->
+                <input type="button" value="申し込み" onclick="hyoji2(1)">
+              </td>
+            </table>
+          </div>
+
+            <div id="disp">
+            <h2>募集その2</h2>
+            <table>
+              <tr>
+                  <td>
+                    <p>教育者名：</p>
+                  </td>
+                  <td>
+                    <p>minamizimaHousuke</p>
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                    <p>レッスン名：</p>
+                  </td>
+                  <td>
+                    <p>Swimming</p>
+                  </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>概要：</p>
+                </td>
+                <td>
+                  <p>ドリル</p>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p>デポジット：</p>
+                </td>
+                <td>
+                  <p>30000</p>
+                </td>
+              </tr>
+              <tr>
+                  <td>
+                    <p>評価の基準：</p>
+                  </td>
+                  <td>
+                    <p>ドリルのフォーム</p>
+                  </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>目標：</p>
+                </td>
+                <td>
+                  <p>1秒の記録アップ</p>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <p>期間：</p>
+                </td>
+                <td>
+                  <p>2019-08-06~2019-10-06</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <!--
+                  <p><button type="button">入力確定</button></p>
+                  -->
+                  <input type="button" value="申し込み" onclick="hyoji1(1)">
+                </td>
+              </table>
+            </div>
+            <!--
+                <button onclick="location.href='./index.html'">総合メニューへ</button>
+            -->
+                <input type="button" onclick="location.href='./index.html'" value="総合メニューへ>
+
+        </form>
+        <script type="text/javascript" src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+        <!--
+        <script>
+
+            $(function () {
+                $("button[type=button]").on('click', function () {
+                    var form = $("form");
+                    var arr = form.serializeArray();
+                    console.log(arr);
+                });
+            });
+        </script>
+        -->
+        <script>
+          function hyoji1(num)
+          {
+            if (num == 0)
+            {
+              document.getElementById("disp").style.display="block";
+            }
+            else
+            {
+              document.getElementById("disp").style.display="none";
+            }
+          }
+        </script>
+        <!--
+          function hyoji2(num2)
+          {
+            if (num2 == 0)
+            {
+              document.getElementById("disp2").style.display="block";
+            }
+            else
+            {
+              document.getElementById("disp2").style.display="none";
+            }
+          }
+        -->
+    </body>
+</html>
